@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-orange-400: hsl(13, 70%, 60%); /* #e17052 */
+  --color-green-200: hsl(173, 61%, 77%); /* #9fe8df */
+  --color-green-400: hsl(172, 67%, 45%); /* #26c2ae */
+  --color-green-750: hsl(183, 79%, 24%); /* #0d686d */
+  --color-green-800: hsl(183, 85%, 21%); /* #085c61 */
+  --color-green-900: hsl(183, 100%, 15%); /* #00474b */
+  --color-grey-50: hsl(189, 41%, 97%); /* #f3f9fa */
+  --color-grey-200: hsl(185, 41%, 84%); /* #c5e4e7 */
+  --color-grey-300: hsl(184, 19%, 68%); /* #9ebbbd */
+  --color-grey-400: hsl(184, 14%, 56%); /* #7f9d9f */
+  --color-grey-500: hsl(186, 14%, 43%); /* #5e7a7d */
+  --color-grey-550: hsl(180, 18%, 40%); /* #547878 */
+  --color-grey-600: hsl(180, 25%, 32%); /* #3d6666 */
+  --text-preset1: 700 48px/71px "Space Mono", monospace;
+  --text-preset2: 700 32px/47px "Space Mono", monospace;
+  --text-preset3: 700 24px/36px "Space Mono", monospace;
+  --text-preset4: 700 20px/30px "Space Mono", monospace;
+  --text-preset5: 700 16px/24px "Space Mono", monospace;
+  --text-preset6: 700 13px/19px "Space Mono", monospace;
+  --text-preset1-letter: -1px;
+  --text-preset2-letter: -0.67px;
+  --spacing-0: 0px;
+  --spacing-50: 0.25rem; /* 4px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-150: 0.75rem; /* 12px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-600: 3rem; /* 48px */
+  --spacing-700: 3.5rem; /* 56px */
+  --spacing-800: 4rem; /* 64px */
+  --spacing-900: 4.5rem; /* 72px */
+  --spacing-1000: 5rem; /* 80px */
+  --spacing-1400: 7rem; /* 112px */
+  --spacing-1600: 8rem; /* 128px */
+}
+
+html,
+body {
+  font-family: "Space Mono", monospace;
+  letter-spacing: 0px;
+  background-color: var(--color-white);
+}
+
+body {
+  /* 如果不开启特定的抗锯齿设置，字体往往会显得略微发虚、变粗，视觉上就会觉得“宽”了 */
+  /* 针对 Chrome, Safari (Mac) */
+  -webkit-font-smoothing: antialiased;
+  /* 针对 Firefox (Mac) */
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  /* 这个强制居中不要用 */
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--color-grey-200);
+}/*# sourceMappingURL=styles.css.map */
