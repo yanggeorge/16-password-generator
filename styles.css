@@ -1,29 +1,36 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
+  /* Colors in HSL */
   --color-white: hsl(0, 0%, 100%);
   --color-black: hsl(0, 0%, 0%);
-  --color-orange-400: hsl(13, 70%, 60%); /* #e17052 */
-  --color-green-200: hsl(173, 61%, 77%); /* #9fe8df */
-  --color-green-400: hsl(172, 67%, 45%); /* #26c2ae */
-  --color-green-750: hsl(183, 79%, 24%); /* #0d686d */
-  --color-green-800: hsl(183, 85%, 21%); /* #085c61 */
-  --color-green-900: hsl(183, 100%, 15%); /* #00474b */
-  --color-grey-50: hsl(189, 41%, 97%); /* #f3f9fa */
-  --color-grey-200: hsl(185, 41%, 84%); /* #c5e4e7 */
-  --color-grey-300: hsl(184, 19%, 68%); /* #9ebbbd */
-  --color-grey-400: hsl(184, 14%, 56%); /* #7f9d9f */
-  --color-grey-500: hsl(186, 14%, 43%); /* #5e7a7d */
-  --color-grey-550: hsl(180, 18%, 40%); /* #547878 */
-  --color-grey-600: hsl(180, 25%, 32%); /* #3d6666 */
-  --text-preset1: 700 48px/71px "Space Mono", monospace;
-  --text-preset2: 700 32px/47px "Space Mono", monospace;
-  --text-preset3: 700 24px/36px "Space Mono", monospace;
-  --text-preset4: 700 20px/30px "Space Mono", monospace;
-  --text-preset5: 700 16px/24px "Space Mono", monospace;
-  --text-preset6: 700 13px/19px "Space Mono", monospace;
-  --text-preset1-letter: -1px;
-  --text-preset2-letter: -0.67px;
+  --color-grey-200: hsl(200, 10%, 90%);
+  --color-grey-600: hsl(230, 10%, 50%);
+  --color-grey-700: hsl(240, 5%, 35%);
+  --color-grey-800: hsl(250, 5%, 20%);
+  --color-grey-850: hsl(250, 5%, 15%);
+  --color-grey-900: hsl(250, 5%, 10%);
+  --color-grey-950: hsl(250, 5%, 5%);
+  --color-yellow-300: hsl(44, 80%, 70%);
+  --color-orange-400: hsl(13, 70%, 60%);
+  --color-red-500: hsl(0, 70%, 60%);
+  --color-green-200: hsl(150, 100%, 70%);
+  /* Gradients */
+  --gradient-1: linear-gradient(
+    90deg,
+    hsl(250, 5%, 10%) 0%,
+    hsl(250, 5%, 5%) 100%
+  );
+  /* Text Presets */
+  --text-preset1: 700 32px/42px "JetBrains Mono", monospace;
+  --text-preset2: 700 24px/32px "JetBrains Mono", monospace;
+  --text-preset3: 700 18px/24px "JetBrains Mono", monospace;
+  --text-preset4: 700 16px/20px "JetBrains Mono", monospace;
+  /* Letter Spacing */
+  --text-preset1-letter: 0px;
+  --text-preset2-letter: 0px;
+  --text-preset3-letter: 0px;
+  --text-preset4-letter: 0px;
   --spacing-0: 0px;
   --spacing-50: 0.25rem; /* 4px */
   --spacing-100: 0.5rem; /* 8px */
@@ -59,8 +66,4 @@ body {
   /* 这个强制居中不要用 */
   align-items: flex-start;
   min-height: 100vh;
-}
-
-body {
-  background-color: var(--color-grey-200);
 }/*# sourceMappingURL=styles.css.map */
