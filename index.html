@@ -20,26 +20,47 @@
 
     <div class="container">
       <div class="pwd-wrapper">
-        <input class="pwd">P4$5W0rD!</input>
+        <input class="pwd-text" value="P4$5W0rD!"></input>
         <img src="/assets/images/icon-copy.svg" alt="icon-copy">
       </div>
 
       <form>
-        <label class="char-length" for="char-length">Character Length</label>
+        <div class="char-length-wrapper">
+          <label class="char-length" for="char-length">Character Length</label>
+          <!-- 拖动选择器 -->
+        </div>
 
-        <input name="uppercase" type="checkbox">
-        <label for="uppercase">Include Uppercase Letters</label>
+        <div class="checks">
+          <div class="check-item">
+            <input name="uppercase" type="checkbox">
+            <label for="uppercase">Include Uppercase Letters</label>
+          </div>
 
-        <input name="lowercase" type="checkbox">
-        <label for="lowercase">Include Lowercase Letters</label>
+          <div class="check-item">
+            <input name="lowercase" type="checkbox">
+            <label for="lowercase">Include Lowercase Letters</label>
+          </div>
 
-        <input name="numbers" type="checkbox">
-        <label for="numbers">Include Numbers</label>
+          <div class="check-item">
+            <input name="numbers" type="checkbox">
+            <label for="numbers">Include Numbers</label>
+          </div>
 
-        <input name="symbols" type="checkbox">
-        <label for="symbols">Include Symbols</label>
+          <div class="check-item">
+            <input name="symbols" type="checkbox">
+            <label for="symbols">Include Symbols</label>
+          </div>
+        </div>
 
-        <label for="strength">Strength</label>
+        <div class="strength-wrapper">
+          <label for="strength">Strength</label>
+          <div class="rectangles">
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+          </div>
+        </div>
 
         <button class="btn-gen" type="submit">
           <div class="btn-content">
