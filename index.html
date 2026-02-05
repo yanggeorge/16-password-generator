@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Password generator app</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  Password Generator
+  <main>
 
-  P4$5W0rD!
+    <p class="title">Password Generator</p>
 
-  Character Length
+    <div class="container">
+      <div class="pwd-wrapper">
+        <input class="pwd">P4$5W0rD!</input>
+        <img src="/assets/images/icon-copy.svg" alt="icon-copy">
+      </div>
 
-  Include Uppercase Letters
-  Include Lowercase Letters
-  Include Numbers
-  Include Symbols
+      <form>
+        <label class="char-length" for="char-length">Character Length</label>
 
-  Strength
+        <input name="uppercase" type="checkbox">
+        <label for="uppercase">Include Uppercase Letters</label>
 
-  Generate
+        <input name="lowercase" type="checkbox">
+        <label for="lowercase">Include Lowercase Letters</label>
 
+        <input name="numbers" type="checkbox">
+        <label for="numbers">Include Numbers</label>
+
+        <input name="symbols" type="checkbox">
+        <label for="symbols">Include Symbols</label>
+
+        <label for="strength">Strength</label>
+
+        <button class="btn-gen" type="submit">
+          <div class="btn-content">
+            <p>Generate</p><img src="/assets/images/icon-arrow-right.svg" alt="">
+          </div>
+        </button>
+      </form>
+    </div>
+
+  </main>
 </body>
+
 </html>
