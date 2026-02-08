@@ -194,11 +194,6 @@ main {
   gap: 16px;
 }
 
-.check-item {
-  font: var(--text-preset4);
-  color: var(--color-grey-200);
-}
-
 .check-item input {
   display: none;
 }
@@ -207,11 +202,26 @@ main {
   display: flex;
   gap: 16px;
   align-items: center;
+  cursor: pointer;
 }
 
 .check-icon {
   width: 20px;
   height: 20px;
+  border: 2px solid var(--color-grey-200);
+}
+
+.check-item input:checked + label .check-icon {
+  border: none;
+  background-image: url("/assets/images/icon-check.svg");
+  background-color: var(--color-green-200);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.check-label-text {
+  font: var(--text-preset4);
+  color: var(--color-grey-200);
 }
 
 .gen-form {
