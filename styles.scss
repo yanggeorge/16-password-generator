@@ -56,7 +56,8 @@ html,
 body {
   font-family: "Space Mono", monospace;
   letter-spacing: 0px;
-  background-color: var(--color-white);
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 body {
@@ -72,4 +73,157 @@ body {
   /* 这个强制居中不要用 */
   align-items: flex-start;
   min-height: 100vh;
+}
+
+main {
+  margin-top: 65px;
+  max-width: 343;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font: var(--text-preset4);
+  color: var(--color-grey-600);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pwd-wrapper {
+  background-color: var(--color-grey-800);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pwd-text {
+  font: var(--text-preset2);
+  flex-grow: 1;
+  background-color: var(--color-grey-800);
+  border: none;
+  outline: none;
+}
+
+.btn-copy {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.img-copy {
+  display: block;
+  width: 17.5px;
+  height: 20px;
+}
+
+.char-length-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.char-length-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 1. 基础容器：必须加上这一行来禁用默认蓝色 */
+.char-length-slider {
+  -webkit-appearance: none; /* 关键：禁用 Chrome/Safari 默认样式 */
+  appearance: none;
+  width: 100%;
+  height: 8px; /* 这是你想要的轨道厚度 */
+  background: linear-gradient(
+    to right,
+    var(--color-green-200) 50%,
+    #18171f 50%
+  ); /* 轨道背景色 */
+  outline: none;
+  cursor: pointer;
+}
+
+/* 2. 修改拖动的小圆点 (Chrome, Safari, Edge) */
+.char-length-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px; /* 圆点的宽度 */
+  height: 28px; /* 圆点的高度 */
+  background: var(--color-green-200); /* 终于可以用你的变量了！ */
+  border-radius: 50%; /* 变成圆形 */
+  cursor: pointer;
+  border: 2px solid var(--color-green-200);
+  transition: all 0.2s ease;
+}
+
+/* 3. 修改拖动的小圆点 (Firefox) */
+.char-length-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: var(--color-green-200);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.char-length-label {
+  font: var(--text-preset4);
+  color: var(--color-grey-200);
+}
+
+.char-length-value {
+  font: var(--text-preset2);
+  color: var(--color-green-200);
+}
+
+.checks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.check-item {
+  font: var(--text-preset4);
+  color: var(--color-grey-200);
+}
+
+.check-item input {
+  display: none;
+}
+
+.check-item label {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.check-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.gen-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--color-grey-800);
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }

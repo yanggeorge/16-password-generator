@@ -15,50 +15,68 @@
 <body>
 
   <main>
-
-    <p class="title">Password Generator</p>
+    <div class="title">Password Generator</div>
 
     <div class="container">
       <div class="pwd-wrapper">
-        <input class="pwd-text" value="P4$5W0rD!"></input>
-        <img src="/assets/images/icon-copy.svg" alt="icon-copy">
+        <input class="pwd-text" placeholder="P4$5W0rD!" readonly></input>
+        <button class="btn-copy">
+          <img class="img-copy" src="/assets/images/icon-copy.svg" alt="icon-copy">
+        </button>
       </div>
 
-      <form>
-        <div class="char-length-wrapper">
-          <label class="char-length" for="char-length">Character Length</label>
-          <!-- 拖动选择器 -->
-        </div>
-
-        <div class="checks">
-          <div class="check-item">
-            <input name="uppercase" type="checkbox">
-            <label for="uppercase">Include Uppercase Letters</label>
+      <form class="gen-form">
+        <div class="form-content">
+          <div class="char-length-container">
+            <div class="char-length-wrapper">
+              <label class="char-length-label" for="char-length">Character Length</label>
+              <div class="char-length-value">10</div>
+            </div>
+            <input class="char-length-slider" type="range" min="1" max="20" value="10">
           </div>
 
-          <div class="check-item">
-            <input name="lowercase" type="checkbox">
-            <label for="lowercase">Include Lowercase Letters</label>
+          <div class="checks">
+            <div class="check-item">
+              <input id="uppercase" name="uppercase" type="checkbox">
+              <label for="uppercase">
+                <img class="check-icon" src="/assets/images/icon-check.svg" alt="">
+                <p class="check-label-text">Include Uppercase Letters</p>
+              </label>
+            </div>
+
+            <div class="check-item">
+              <input id="lowercase" name="lowercase" type="checkbox">
+              <label for="lowercase">
+                <img class="check-icon" src="/assets/images/icon-check.svg" alt="">
+                <p class="check-label-text">Include Lowercase Letters</p>
+              </label>
+            </div>
+
+            <div class="check-item">
+              <input id="numbers" name="numbers" type="checkbox">
+              <label for="numbers">
+                <img class="check-icon" src="/assets/images/icon-check.svg" alt="">
+                <p class="check-label-text">Include Numbers</p>
+              </label>
+            </div>
+
+            <div class="check-item">
+              <input id="symbols" name="symbols" type="checkbox">
+              <label for="symbols">
+                <img class="check-icon" src="/assets/images/icon-check.svg" alt="">
+                <p class="check-label-text">Include Symbols</p>
+              </label>
+            </div>
           </div>
 
-          <div class="check-item">
-            <input name="numbers" type="checkbox">
-            <label for="numbers">Include Numbers</label>
-          </div>
-
-          <div class="check-item">
-            <input name="symbols" type="checkbox">
-            <label for="symbols">Include Symbols</label>
-          </div>
-        </div>
-
-        <div class="strength-wrapper">
-          <label for="strength">Strength</label>
-          <div class="rectangles">
-            <span class="rectangle"></span>
-            <span class="rectangle"></span>
-            <span class="rectangle"></span>
-            <span class="rectangle"></span>
+          <div class="strength-wrapper">
+            <label for="strength">Strength</label>
+            <div class="rectangles">
+              <span class="rectangle"></span>
+              <span class="rectangle"></span>
+              <span class="rectangle"></span>
+              <span class="rectangle"></span>
+            </div>
           </div>
         </div>
 
@@ -69,7 +87,6 @@
         </button>
       </form>
     </div>
-
   </main>
 </body>
 
